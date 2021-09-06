@@ -8,7 +8,7 @@ class Footer extends Component {
          Belal ELolahi  
       </h3>
       </>
-    )
+    );
   
  }
 }
