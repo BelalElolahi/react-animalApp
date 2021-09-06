@@ -6,10 +6,10 @@ class Header extends Component {
   return (
       <>
       <h3>
-         Animale 
-      </h3>
+      Horne dBeasts Gallary 
+       </h3>
       </>
-    )
+    );
   
  }
 }
