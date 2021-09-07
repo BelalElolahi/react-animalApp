@@ -1,4 +1,5 @@
 import {React,Component} from "react";
+
 import HornedBeasts from "./HornedBeasts";
 import DataPost from "./Data.json";
 
@@ -6,18 +7,27 @@ import DataPost from "./Data.json";
 class Main extends Component {
   render(){
   return (
-      <>
-      <h3> main </h3>
-     
-        {
+    
+      <div className="row">
+          {
           DataPost.map(item => {
-            return  <HornedBeasts tilte={item.title} imgUrl={item.image_url} description={item.description} keyword={item.keyword} horns={item.horns}/>;
+            return  <HornedBeasts handelOpen={this.props.handelOpen}  
+            title={item.title} 
+            imgUrl={item.image_url} 
+            description={item.description} 
+            keyword={item.keyword} 
+            horns={item.horns}
+            />;
           }
 
           )
         }
+
+      </div>
+     
+        
       
-      </>
+      
     );
   
  }
